@@ -1,0 +1,71 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --clr-primary-01: hsl(220, 15%, 55%);
+  --clr-primary-02: hsl(218, 44%, 22%);
+  --clr-neutral-01: hsl(0, 0%, 100%);
+  --clr-neutral-02: hsl(212, 45%, 89%);
+}
+
+/* General Styles */
+body {
+  font-size: 0.9em;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--clr-neutral-02);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+main {
+  max-width: 20em;
+  border-radius: 20px;
+  background-color: var(--clr-neutral-01);
+  padding: 1rem 1rem 2.5rem;
+}
+
+/* Typography */
+h1 {
+  color: var(--clr-primary-02);
+  font-size: 1.375em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--clr-primary-01);
+}
+
+/* Footer */
+footer {
+  margin-top: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
